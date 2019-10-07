@@ -40,5 +40,20 @@
 			<result name="success" type="tiles">/customer.tiles</result>
 		</action>
 
+		<action name="userImage"
+			class="com.ebix.struts2.FileUploadAction">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">2097152</param>
+				<param name="allowedTypes">
+					image/png,image/gif,image/jpeg,image/pjpeg
+				</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="success" type="tiles">/user.image.sucess.tile</result>
+			<result name="input" type="tiles">/user.image.tile</result>
+		</action>
+		<action name="upload">
+			<result name="success" type="tiles">/user.image.tile</result>
+		</action>
 	</package>
 </struts>
