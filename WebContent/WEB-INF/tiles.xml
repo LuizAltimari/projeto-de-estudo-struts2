@@ -29,4 +29,7 @@
 	<definition name="/user.image.sucess.tile" extends="baseLayout">
 		<put-attribute name="body" value="/SuccessUserImage.jsp" />
 	</definition>
+	<definition name="/ajaxdemo.tiles" extends="baseLayout">
+		<put-attribute name="body" value="/AjaxDemo.jsp" />
+	</definition>
 </tiles-definitions>
